@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+</head>
+<body>
+    <h1> Expense Manager </h1>
+    <form id="mainform" onsubmit="savetoLS(event)">
+        <label for="number">Amount</label>
+       <input type="number" name="amount" id="amount">
+       <label for="desc">Description</label>
+       <input type="text" name="desc" id="desc">
+       <label for="cat">Categories</label>
+       <select name="cat" id="cat">Categories
+           <option value="Entertainment">Entertainment</option>
+           <option value="Essential">Essential</option>
+           <option value="Utility">Utility</option>
+           <option value="Travel">Travel</option>
+       </select>
+       <button id="btn" value='submit' type="submit">Submit</button>
+       <ul id="listdata">
+          
+       </ul>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
